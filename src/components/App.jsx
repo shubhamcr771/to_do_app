@@ -33,10 +33,11 @@ function App() {
     <div className="container">
       <div className="heading">
         <h1>{currentDate}</h1>
-      </div>
+        </div>
+      <h2>To-Do List</h2>
       <InputArea onAdd={addItem} />
       <div>
-        <ul>
+        <ol>
           {items.map((todoItem, index) => (
             <ToDoItem
               key={index}
@@ -45,7 +46,7 @@ function App() {
               onChecked={deleteItem}
             />
           ))}
-        </ul>
+        </ol>
       </div>
     </div>
   );
