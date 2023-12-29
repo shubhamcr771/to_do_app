@@ -1,9 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ToDoItem from "./ToDoItem";
 import InputArea from "./InputArea";
 
 function App() {
   const [items, setItems] = useState([]);
+  const [currentDate, setCurrentDate] = useState("");
+
+  useEffect(() => {
+    const today = new Date();
+    const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+    const formattedDate = today.toLocaleDateString('en-US', options);
+    setCurrentDate(formattedDate);
+  }, []);
+  
+
 
   function addItem(inputText) {
     setItems((prevItems) => {
@@ -22,7 +32,7 @@ function App() {
   return (
     <div className="container">
       <div className="heading">
-        <h1>To-Do List</h1>
+        <h1>{currentDate}</h1>
       </div>
       <InputArea onAdd={addItem} />
       <div>
