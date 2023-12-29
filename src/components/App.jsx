@@ -8,12 +8,15 @@ function App() {
 
   useEffect(() => {
     const today = new Date();
-    const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
-    const formattedDate = today.toLocaleDateString('en-US', options);
+    const options = {
+      weekday: "short",
+      year: "numeric",
+      month: "short",
+      day: "numeric",
+    };
+    const formattedDate = today.toLocaleDateString("en-US", options);
     setCurrentDate(formattedDate);
   }, []);
-  
-
 
   function addItem(inputText) {
     setItems((prevItems) => {
@@ -33,7 +36,7 @@ function App() {
     <div className="container">
       <div className="heading">
         <h1>{currentDate}</h1>
-        </div>
+      </div>
       <h2>To-Do List</h2>
       <InputArea onAdd={addItem} />
       <div>

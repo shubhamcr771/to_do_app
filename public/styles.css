@@ -10,9 +10,9 @@ body {
     font-family: "Architects Daughter", cursive;
     text-align: center;
     font-size: 130%;
-  }
-  
-  .container {
+}
+
+.container {
     width: 100%;
     height: auto;
     min-height: 500px;
@@ -25,22 +25,24 @@ body {
     box-shadow: 4px 3px 7px 2px #c90b7a40;
     padding: 1rem;
     box-sizing: border-box;
-  }
-  .heading {
+}
+
+.heading {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
-  }
-  .heading h1 {
+}
+
+.heading h1 {
     transform: rotate(2deg);
     padding: 0.2rem 1.2rem;
     border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
     background-color: rgb(243, 246, 226);
     font-size: 1.5rem;
-  }
-  
-  .form input {
+}
+
+.form input {
     box-sizing: border-box;
     background-color: transparent;
     padding: 0.7rem;
@@ -53,9 +55,9 @@ body {
     color: hsla(263, 100%, 2%, 0.7);
     width: 90%;
     margin-bottom: 20px;
-  }
-  
-  button {
+}
+
+button {
     padding: 0;
     border: none;
     font-family: "Architects Daughter", cursive;
@@ -63,16 +65,17 @@ body {
     padding-bottom: 3px;
     border-radius: 5px;
     background-color: #b9fad2;
-  }
-  button span {
+}
+
+button span {
     background: #51f47d;
     display: block;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     border: 2px solid hsl(198, 1%, 29%);
-  }
-  
-  li {
+}
+
+li {
     text-align: left;
     position: relative;
     padding: 0.5rem;
@@ -80,5 +83,4 @@ body {
     font-weight: bold;
     cursor: pointer;
 
-  }
-  
+}
