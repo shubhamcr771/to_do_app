@@ -10,7 +10,6 @@ function App() {
     const today = new Date();
     const options = {
       weekday: "short",
-
       year: "numeric",
       month: "short",
       day: "numeric",
